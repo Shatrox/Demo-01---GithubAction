@@ -10,7 +10,7 @@ jobs:
   # Nom du job 
   show_hello: 
     runs-on: windows-latest
-    Steps:
+    steps:
       # Nom et l'action de l'etape 
       - name: print_hello
         run: echo "Hello World!"
