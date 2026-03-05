@@ -7,8 +7,7 @@ on:
   push:
     branches: 
       - main
-
-  work_dispatch:
+  workflow_dispatch:
 
 # Creation de variable d'env custom
 env: 
@@ -18,7 +17,7 @@ env:
 # Job qui manipule des varibles et secrets
 jobs:
   use_variables:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: confirm deploy
         #Example d'une variable d'env pré-configuré
