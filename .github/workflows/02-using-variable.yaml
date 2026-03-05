@@ -26,3 +26,8 @@ jobs:
         # Exemple d'une variable d'env custom
         run: |
           echo "Lieux de formation : $FORMATION_CENTER"
+      - name: variable github
+        run: |
+          echo "Project name : ${{ vars.PROJECT_NAME}}"
+          echo "User password : ${{ secrets.USER_PASSWORD}}"
+          echo "Mode selected : ${{ vars.MODE}}"
