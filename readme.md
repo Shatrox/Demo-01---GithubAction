@@ -1,5 +1,7 @@
 # Demo 01 - Introduction au Github Action 
 
+## Part 1 : Syntaxe 
+
 ## Mise en Place
 - Initializer le repo git
 - Mettre le dossier sur github 
@@ -38,3 +40,18 @@ L'ensemble d'action a faire
 - Action à faire: 
     - Script _(Syntaxe qui depend du terminal)_
     -Utilisation d'action _(Ca sera vue plus tard)_
+
+## Part 2 : Variables 
+
+### Mise en Place
+- Nouveau fichier `workflow`
+- Push sur Github
+- Utilisation des variables & secrets: 
+    - Definir une "Zone" `env` dans le workflow (attention is public!)
+    - Definir dans le parametres du repo Github
+    - Manipuler les variables d'event du workflow (Lié au declenchement)
+
+### Syntaxe d'utilisation
+- Variable d'env local: 
+    - Sous Linux `$VAR_NAME`
+    - Sous Powershell `$env:VAR_NAME`

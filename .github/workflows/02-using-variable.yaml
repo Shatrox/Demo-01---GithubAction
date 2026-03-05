@@ -1,0 +1,29 @@
+#Definition du nom 
+
+name: Manipuler des variables
+
+#Trigger : Push sur "main" et manuel
+on: 
+  push:
+    branches: 
+      - main
+
+  work_dispatch:
+
+# Creation de variable d'env custom
+env: 
+  FORMATION_CENTER: "DIGITAL CITY"
+
+
+# Job qui manipule des varibles et secrets
+jobs:
+  use_variables:
+    runs_on: ubuntu-latest
+    steps:
+      - name: confirm deploy
+        #Example d'une variable d'env pré-configuré
+        run: echo "Deploiment de la branches $GITHUB_REF"
+      - name: formation location
+        # Exemple d'une variable d'env custom
+        run: |
+          echo "Lieux de formation : $FORMATION_CENTER"
